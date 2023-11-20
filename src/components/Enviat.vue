@@ -5,11 +5,12 @@
       <!-- Lo de mostrar els emojis no ho he aconseguit, he posat la imatge a ma per a que visualment es vegi com quedaria però aquesta part no la he aconseguit fer -->
     </div>
     <div class="text">
-      <span>{{ entrada.body }}</span>
+      <span class="body-text">{{ entrada.body }}</span>
     </div>
-      <p>{{ mostrarData(entrada.dataCreacio) }}</p>
+    <p>{{ mostrarData(entrada.dataCreacio) }}</p>
   </div>
 </template>
+
 
 
 <script setup lang="ts">
@@ -62,5 +63,10 @@ img{
 .text {
   width: 50%;
   background-color: #e5e7eb;
+}
+
+.body-text {
+  display: block;
+  white-space: pre-wrap;
 }
 </style>
